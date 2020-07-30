@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Pietro's Pizza</title>
+      <!--
+        
+         Filename: results.html
+      
+         Author: Patrick Graham  
+		 Zachary Simino-Ruch
+         Date: 07/19/2020    
+         Final Group Project
+		 
+		 Supporting Files:
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link href='http://fonts.googleapis.com/css?family=Krona+One' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="main.css">
+	  <link rel="shortcut icon" href="images/pizzalogo.png" />
+   </head>
+   <body>
+   <div id="wrapper">
+   <header>
+	<h1>Contact Us</h1>
+	</header>
+	<h2>Questions/Comments? We're here for you!</h2>
+	
+	<nav class="sitenavigation">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+			  
+               <li><a href="menu.html">Menu</a></li>
+			   
+               <li><a href="location.html">Location</a></li>
+			   
+               <li><a href="AboutUs.html">About us</a></li>
+			   
+			   <li><a href="ContactUs.html">Contact us</a></li>
+			   
+            </ul>
+    </nav>
+	<aside>
+		<img src="images/harold.jpg" alt="An elderly gentleman named Harold giving you, the customer, a big thumbs up!">
+	</aside>
+	
+<div class="comments">
+
+  <form onsubmit="results();" method="post" action="/results.html"> 
+  <label for='fname'>First name:</label><br>
+  <input type='text' id='fname' name='fname' size='48' ><br>
+  <label for='lname'>Last name:</label><br>
+  <input type='text' id='lname' name='lname' size='48'><br>
+  <label for='email'>Email:</label><br>
+  <input type='text' id='email' name='email' size='48'><br>
+  <label for='comments'>Comments:</label><br>
+  <textarea id='comments' name='comments' rows='3' cols='47'></textarea><br>
+  <input type='checkbox' id='checkbox' name='checkbox'>
+  <label for='checkbox'><b>Please send me monthly newsletter</b></label><br>
+  <input type='submit' value='Send'>
+  <input type='reset' value='Reset'>
+</form>
+<script>
+   
+   
+   function results() {
+   var fname = document.getElementById('fname').value;
+   var lname = document.getElementById('lname').value;
+   var email = document.getElementById('email').value;
+   
+  
+   
+   if (document.getElementById('checkbox').checked) {
+   
+    document.write('<link rel="stylesheet" type="text/css" href="main.css" />')
+	  document.write("<h1>You are now subscribed to our newsletter</h1>");
+      document.write("<p>Your newsletter will be sent to:</p>");
+	  document.write("<p>" + fname + "</p>" + "<br/>");
+      document.write("<p>" + lname + "</p>" + "<br/>");
+      document.write("<p>" + email + "</p>" + "<br/>");
+      document.write("<h2>Thank You!</h2>");
+      document.write("<p>We appreciate your feedback!</p>");
+   } else {
+    document.write('<link rel="stylesheet" type="text/css" href="main.css" />')
+      document.write("<h1>Thank You!</h2>"); 
+	  document.write("<p>We appreciate your feedback.</h2>");
+	  }
+	  }
+	  results();
+</script>
+</div>
+
+	
+		
+
+	
+	<footer>
+         <p class="contact">123 N Main Street &middot; St. Charles, MO 63301 &middot; (815) 555-5555</p>
+      </footer>
+	  </div>
+   </body>
+</html>

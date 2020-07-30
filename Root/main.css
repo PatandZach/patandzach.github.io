@@ -1,0 +1,125 @@
+/* document part 
+   Pietro's Pizza style sheet 
+   Filename: main.css
+
+   Author: Patrick Graham  
+   Date: 07/19/2020     
+   Final Group project
+ */
+ 
+ /*heading section*/
+ header {
+   background-color: pink;
+   border: 2px solid black;
+   margin-bottom: 2%;
+   text-align: center;
+}
+h1 {
+	text-align:center;
+
+}
+h2 {
+	text-align:center;	
+}
+ /*site navigation*/
+ nav {
+	 float: left;
+	 background-color: pink;
+	 font-size: 22px; 
+	 height:200px;
+	 width:200px;
+	 border: 2px solid black;
+	 text-align: left;
+	 padding:1%;
+	 position: relative;
+	 margin-bottom: 2%;
+	 margin-right:1%;
+	 
+ }
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: white;
+} 
+ ul li {
+	 margin-bottom: 10px;
+ }
+ /*main content*/
+ body {
+		background-image: url("images/white.jpg");
+		background-color:#f8f8ff;
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+ }
+
+ 
+ p {text-align:center;
+	font-size: 22px;
+	
+ }
+aside img {
+	 float: right;
+	 padding: 1%;
+	 border: 2px solid black;
+	 margin-bottom: 2em;
+	 background-color: pink;
+	 height: 200px;
+	 width: 200px;
+	 margin-left:1%;
+ }
+
+form {
+  width: 500px;
+  padding: 1em;
+  margin: auto;
+}
+
+.veg {
+	margin:auto;
+}
+th, td {
+  border: 1.5px solid black;
+  font-size:22px;
+  background-color: pink;
+}
+table {
+margin-bottom:2%;
+margin-left:25%
+}
+/* input fields */
+
+textarea {
+	resize:none;
+}
+.comments {
+font-size:25px;
+margin-left:5%;	
+}
+table {width:50%;
+}
+ /*footer section*/
+footer {
+   padding: 1% 1% 1% 1%;
+   background-color: pink;
+   clear: both;
+   font-size: 20px;
+   font-weight: bold;
+   border: 2px solid black; 
+}
+footer p {
+}
+ .contact {
+		text-align: center;
+	}
